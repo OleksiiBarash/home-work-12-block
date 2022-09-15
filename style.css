@@ -31,30 +31,26 @@ body {
     max-width: 1076px;
     min-width: 375px;
     padding: 0 15px;
-
 }
 
 .choose {
     padding: 53px 0 118px 0;
 }
 
-.content__box {
+.choose__box {
     width: 66%;
     text-align: center;
-}
-
-.content__box--head {
     margin: 0 auto 75px auto;
 }
 
-.content__box-headindg {
+.choose__box-headindg {
     font-size: 36px;
     line-height: 57px;
     letter-spacing: 0.2px;
     margin-bottom: 10px;
 }
 
-.content__box-text {
+.choose__box-text {
     font-weight: 500;
     font-size: 14px;
     line-height: 20px;
@@ -62,24 +58,29 @@ body {
     color: #737373;
 }
 
-.choose__box {
+.choose__card {
     text-align: center;
 }
 
-.content__box-white {
+.choose__card-section-page {
     background-color: #FFFFFF;
     height: 100%;
+    padding: 30px 0;
 }
 
-.choose__box-section {
+.icon {
+    margin-bottom: 10px;
+}
+
+.choose__card-section {
     margin-bottom: 30px;
 }
 
-.choose__box-section:last-child {
+.choose__card-section:last-child {
     margin-bottom: 0px;
 }
 
-.choose__box-section-title {
+.choose__card-section-page-title {
     font-size: 40px;
     line-height: 57px;
     letter-spacing: 0.2px;
@@ -87,50 +88,31 @@ body {
     margin-bottom: 10px;
 }
 
-.choose__box-section-subtitle {
+.choose__card-section-page-subtitle {
     font-size: 16px;
     line-height: 24px;
     letter-spacing: 0.1px;
     color: #737373;
-    padding-bottom: 30px;
-}
-
-.people {
-    padding-top: 32px;
-    margin-bottom: 12px;
-}
-
-.diagrame {
-    padding-top: 40px;
-    margin-bottom: 21px;
-}
-
-.medal {
-    padding-top: 30px;
-    margin-bottom: 10px;
-}
-
-.case {
-    padding-top: 34px;
-    margin-bottom: 13px;
 }
 
 .advice {
     padding: 98px  0 243px 0;
 }
 
-.advice__box-section-page {
-    display: flex;
-    flex-direction: column;
+.advice__box {
+    width: 66%;
+    text-align: center;
+    margin: 0 auto 75px auto;
 }
 
-.advice__box-section-page-info-subtitle--black {
-    color: #252B42;
-    margin: 0 0 15px 30px;
-    padding-top: 30px;
+.advice__box-headindg {
+    font-size: 36px;
+    line-height: 57px;
+    letter-spacing: 0.2px;
+    margin-bottom: 10px;
 }
 
-.advice__box-section-page-info-text {
+.advice__box-text {
     font-weight: 500;
     font-size: 14px;
     line-height: 20px;
@@ -138,11 +120,29 @@ body {
     color: #737373;
 }
 
-.advice__box-section-page-info-text--margin {
+.advice__card-section-page {
+    display: flex;
+    flex-direction: column;
+    background-color: #FFFFFF;
+    height: 100%;
+}
+
+.advice__card-section-page-info-subtitle {
+    color: #252B42;
+    margin: 0 0 15px 30px;
+    padding-top: 30px;
+}
+
+.advice__card-section-page-info-text {
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 20px;
+    letter-spacing: 0.2px;
+    color: #737373;
     margin: 0 0 30px 30px;
 }
 
-.advice__box-section-page-info {
+.advice__card-section-page-info {
     width: 90%;
 }
 
@@ -150,43 +150,54 @@ body {
     width: 100%;
 }
 
-.advice__box-section {
+.advice__card-section {
     margin-bottom: 30px;
 }
 
-.advice__box-section:last-child {
+.advice__card-section:last-child {
     margin-bottom: 0px;
 }
 
 @media screen and (min-width: 769px) {
-    .choose__box-section, .advice__box-section {
+    .choose__card-section, .advice__card-section {
         width: 50%;
         padding: 0 15px;
     }
-    .content__box-margine--three {
+    .margin-three {
         margin-bottom: 0;
     }
-    .container--grey {
+    .grey {
         background: linear-gradient(180deg, #FAFAFA 0%, #E2E2E2 100%);
     }
-    .container--white {
+    .white {
         background: #FAFAFA;
     }
-    .display-box {
+    .display-card {
         display: flex;
         flex-wrap: wrap;
     }
 }
 
 @media screen and (min-width: 1046px) {
-    .choose__box-section, .advice__box-section {
+    .choose__card-section, .advice__card-section {
         width: 25%;
         padding: 0 15px;
     }
-    .content__box-margine {
+    .choose__card-section, .advice__card-section {
         margin-bottom: 0;
     }
-    .content__box {
+    .choose__box {
         width: 50%;
+        margin: 0 auto 50px auto;
+    }
+    .advice__box {
+        width: 45%;
+        margin: 0 auto 45px auto;
+    }
+    .choose {
+        padding: 80px 0 80px 0;
+    }
+    .advice {
+        padding: 125px 0 81px 0;
     }
 }
